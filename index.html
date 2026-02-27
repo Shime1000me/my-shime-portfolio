@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shimelis Hatiso - Web Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', monospace;
+        }
+        body {
+            background: #f0f0f0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .section {
+            border: 3px solid #000;
+            margin-bottom: 25px;
+            background: white;
+            box-shadow: 8px 8px 0px #000;
+        }
+        .section-header {
+            background: #000;
+            color: white;
+            padding: 15px 20px;
+            font-size: 24px;
+            font-weight: bold;
+            border-bottom: 3px solid #000;
+            letter-spacing: 2px;
+        }
+        .section-content {
+            padding: 25px;
+        }
+        .project, .certificate, .photo-item {
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 2px dashed #ccc;
+        }
+        .project:last-child, .certificate:last-child, .photo-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .skill-bar {
+            margin: 15px 0;
+            font-size: 18px;
+        }
+        .skill-bar span {
+            display: inline-block;
+            width: 120px;
+            font-weight: bold;
+        }
+        .skill-fill {
+            display: inline-block;
+            height: 25px;
+            background: #000;
+            vertical-align: middle;
+            border-radius: 0 10px 10px 0;
+        }
+        .contact-info {
+            line-height: 2.5;
+            font-size: 18px;
+        }
+        a {
+            color: #000;
+            font-weight: bold;
+            text-decoration: none;
+            border-bottom: 2px solid #000;
+        }
+        a:hover {
+            background: yellow;
+            border-bottom: none;
+        }
+        .footer {
+            text-align: center;
+            padding: 25px;
+            border: 3px solid #000;
+            background: white;
+            font-weight: bold;
+            font-size: 18px;
+            box-shadow: 5px 5px 0px #000;
+        }
+        ul {
+            margin-left: 30px;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.8;
+            margin: 10px 0;
+        }
+        strong {
+            font-size: 18px;
+        }
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .photo-frame {
+            border: 3px solid #000;
+            padding: 10px;
+            background: #f9f9f9;
+            text-align: center;
+        }
+        .photo-frame img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border: 2px solid #000;
+        }
+        .photo-caption {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .cert-frame {
+            border: 3px solid #000;
+            padding: 10px;
+            background: #f9f9f9;
+            text-align: center;
+        }
+        .cert-frame img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border: 2px solid #000;
+        }
+        .project-img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border: 3px solid #000;
+            margin: 15px 0;
+        }
+        .link-box {
+            background: #000;
+            color: white;
+            padding: 10px;
+            display: inline-block;
+            margin: 10px 0;
+        }
+        .link-box a {
+            color: white;
+            border-bottom: 2px solid white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <div class="section">
+            <div class="section-header">⚡ SHIMELIS HATISO - WEB DEVELOPER ⚡</div>
+        </div>
+
+        <!-- ABOUT ME -->
+        <div class="section">
+            <div class="section-header">📌 ABOUT ME</div>
+            <div class="section-content">
+                <p><strong>📌 NAME:</strong> Shimelis Hatiso</p>
+                <p><strong>📌 TITLE:</strong> Web Developer</p>
+                <p><strong>📌 EXPERIENCE:</strong> 2 years</p>
+                <p><strong>📌 SKILLS:</strong></p>
+                <ul>
+                    <li>✅ HTML, CSS, JavaScript, Python</li>
+                    <li>✅ Google Apps Script</li>
+                    <li>✅ GitHub Pages</li>
+                    <li>✅ Form integration</li>
+                </ul>
+                <p><strong>📌 BIO:</strong></p>
+                <p style="font-size: 20px; font-weight: bold; border-left: 5px solid #000; padding-left: 15px;">"I build simple digital solutions"</p>
+            </div>
+        </div>
+
+        <!-- PROJECT 1 -->
+        <div class="section">
+            <div class="section-header">🚀 PROJECT 1: ONLINE REGISTRATION SYSTEM</div>
+            <div class="section-content">
+                <p><strong>📱 NAME:</strong> Leku Secondary and Preparatory School Online Enrollment</p>
+                <p><strong>🎯 PURPOSE:</strong> Student registration</p>
+                <p><strong>🛠️ TECH USED:</strong></p>
+                <ul>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>Google Forms</li>
+                    <li>Google Sheets</li>
+                </ul>
+                <p><strong>✨ FEATURES:</strong></p>
+                <ul>
+                    <li>Photo upload</li>
+                    <li>Auto data saving</li>
+                    <li>Fraud detection (Ctrl+F)</li>
+                    <li>Director dashboard</li>
+                </ul>
+                <p><strong>📊 RESULTS:</strong></p>
+                <ul>
+                    <li>80% time saved</li>
+                    <li>Zero paper</li>
+                    <li>Fraud stopped</li>
+                </ul>
+                
+                <!-- PROJECT 1 IMAGE -->
+                <img src="leku-web.jpg" alt="Leku Enrollment System Screenshot" class="project-img">
+                
+                <div class="link-box">
+                    <strong>🔗 LIVE LINK:</strong> <a href="https://shime1000me.github.io/Leku-Enrollment/" target="_blank">https://shime1000me.github.io/Leku-Enrollment/</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="section">
+            <div class="section-header">📚 PROJECT 2: SIDAAMU AFOO-ENGLISH DICTIONARY</div>
+            <div class="section-content">
+                <p><strong>📱 NAME:</strong> Sidaamu Afoo-English Dictionary</p>
+                <p><strong>🎯 PURPOSE:</strong> Language translation and preservation</p>
+                <p><strong>🛠️ TECH USED:</strong></p>
+                <ul>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>GitHub Pages</li>
+                </ul>
+                <p><strong>✨ FEATURES:</strong></p>
+                <ul>
+                    <li>Sidaamu Afoo to English</li>
+                    <li>English to Sidaamu Afoo</li>
+                    <li>Search function</li>
+                    <li>Easy to use interface</li>
+                </ul>
+                <p><strong>📊 RESULTS:</strong></p>
+                <ul>
+                    <li>Helping preserve local language</li>
+                    <li>Students learning both languages</li>
+                </ul>
+                
+                <!-- PROJECT 2 IMAGE -->
+                <img src="sid-eng%20dict.jpg" alt="Sidaamu Afoo Dictionary Screenshot" class="project-img">
+            </div>
+        </div>
+
+        <!-- CERTIFICATES -->
+        <div class="section">
+            <div class="section-header">🎓 CERTIFICATES</div>
+            <div class="section-content">
+                <div class="cert-grid">
+                    <!-- CERTIFICATE 1 -->
+                    <div class="cert-frame">
+                        <img src="CS_AddisCoder_cert.jpg" alt="AddisCoder Certificate">
+                        <div class="photo-caption">
+                            <p><strong>Computer Science</strong></p>
+                            <p>AddisCoder 2025</p>
+                        </div>
+                    </div>
+                    
+                    <!-- CERTIFICATE 2 -->
+                    <div class="cert-frame">
+                        <img src="Programming_Fundamentals_ud_cert.jpg" alt="Udacity Programming Fundamentals">
+                        <div class="photo-caption">
+                            <p><strong>Programming Fundamentals</strong></p>
+                            <p>Udacity 2024</p>
+                        </div>
+                    </div>
+                    
+                    <!-- CERTIFICATE 3 -->
+                    <div class="cert-frame">
+                        <img src="Data_Analysis_Fundamentals_ud_cert.jpg" alt="Udacity Data Analysis">
+                        <div class="photo-caption">
+                            <p><strong>Data Analysis Fundamentals</strong></p>
+                            <p>Udacity 2025</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- INTERNATIONAL EXPERIENCE -->
+        <div class="section">
+            <div class="section-header">🌍 INTERNATIONAL EXPERIENCE</div>
+            <div class="section-content">
+                <div class="photo-grid">
+                    <!-- PHOTO 1 -->
+                    <div class="photo-frame">
+                        <img src="Alex.jpg" alt="With Alex from China">
+                        <div class="photo-caption">
+                            <p><strong>🇨🇳 With Alex from China</strong></p>
+                            <p>Addis Ababa 2025</p>
+                        </div>
+                    </div>
+                    
+                    <!-- PHOTO 2 -->
+                    <div class="photo-frame">
+                        <img src="Dan.jpg" alt="With Dan from Spain">
+                        <div class="photo-caption">
+                            <p><strong>🇪🇸 With Dan from Spain</strong></p>
+                            <p>Addis Ababa 2025</p>
+                        </div>
+                    </div>
+                    
+                    <!-- PHOTO 3 -->
+                    <div class="photo-frame">
+                        <img src="addiscoder25.jpg" alt="AddisCoder 2025 Members">
+                        <div class="photo-caption">
+                            <p><strong>👥 AddisCoder 2025</strong></p>
+                            <p>Members from different regions</p>
+                        </div>
+                    </div>
+                    
+                    <!-- PHOTO 4 -->
+                    <div class="photo-frame">
+                        <img src="other.jpg" alt="Other International Friends">
+                        <div class="photo-caption">
+                            <p><strong>🌐 Other International Friends</strong></p>
+                            <p>Addis Ababa 2025</p>
+                        </div>
+                    </div>
+                </div>
+                <p style="margin-top: 30px; font-size: 20px; font-weight: bold; text-align: center; border-top: 2px solid #000; padding-top: 20px;">
+                    🌍 "Worked with international teams, learned global standards"
+                </p>
+            </div>
+        </div>
+
+        <!-- WORK EXPERIENCE -->
+        <div class="section">
+            <div class="section-header">💼 WORK EXPERIENCE</div>
+            <div class="section-content">
+                <p><strong>💼 2026 - PRESENT</strong></p>
+                <p>└─ Role: Web Developer</p>
+                <p>└─ Schools helped: Leku Secondary and Preparatory School</p>
+                <p>└─ Students impacted: <strong>5,000+</strong></p>
+            </div>
+        </div>
+
+        <!-- TECHNICAL SKILLS -->
+        <div class="section">
+            <div class="section-header">⚙️ TECHNICAL SKILLS</div>
+            <div class="section-content">
+                <p><strong>🌐 FRONTEND</strong></p>
+                <div class="skill-bar"><span>HTML5</span> <span class="skill-fill" style="width:250px;"></span> 100%</div>
+                <div class="skill-bar"><span>CSS3</span> <span class="skill-fill" style="width:250px;"></span> 100%</div>
+                <div class="skill-bar"><span>JavaScript</span> <span class="skill-fill" style="width:200px;"></span> 80%</div>
+                <div class="skill-bar"><span>Python</span> <span class="skill-fill" style="width:225px;"></span> 90%</div>
+                
+                <p style="margin-top: 20px;"><strong>🔧 TOOLS</strong></p>
+                <p>└─ Google Forms/Sheets</p>
+                <p>└─ GitHub</p>
+                
+                <p style="margin-top: 20px;"><strong>📱 OTHER</strong></p>
+                <p>└─ Responsive Design</p>
+                <p>└─ Problem Solving</p>
+                <p>└─ Client Communication</p>
+            </div>
+        </div>
+
+        <!-- CONTACT ME -->
+        <div class="section">
+            <div class="section-header">📞 CONTACT ME</div>
+            <div class="section-content contact-info">
+                <p><strong>📧 EMAIL:</strong> <a href="mailto:shimehatisoburiso@gmail.com">shimehatisoburiso@gmail.com</a></p>
+                <p><strong>📞 PHONE:</strong> <a href="tel:+251962524802">+251 962 524 802</a></p>
+                <p><strong>⏰ AVAILABLE:</strong> 24/7</p>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            ⚡ THANK YOU FOR VISITING! © 2026 Shimelis Hatiso ⚡
+        </div>
+    </div>
+</body>
+</html>
